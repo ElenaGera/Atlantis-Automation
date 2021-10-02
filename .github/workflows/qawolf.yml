@@ -32,7 +32,7 @@ jobs:
 
       # - name: Start local server
       - run: npm run dev & npx wait-on http://localhost:3000
-
+      - run: npx qawolf init
       - run: npx qawolf test --headless
         env:
           # configure tests with environment variables
